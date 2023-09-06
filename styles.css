@@ -1,19 +1,37 @@
 body {
-    background-color: #1E2F23;
+    background-color: #FDE9D7;
+    margin: 0;
 }
 
 header {
+    background-color: #325b54;
     display: flex;
     flex-direction: column;
 }
-
 header h1 {
-    color: #F75250;
+    color: #FDE9D7;
+    font-family: 'Syne', sans-serif;
     font-size: 10vw;
+    text-align: center;
     justify-content: center;
+    align-items: center;
     margin-inline: auto;
+    text-shadow: 20px 5px #D7263D;
 }
 
-hr {
-    background-color: #99621E;
+.class {
+    margin: 40px;
+}
+
+.text {
+    color: black;
+}
+
+footer {
+    margin: 0;
+}
+
+footer img {
+    width: 100%;
+    
 }
