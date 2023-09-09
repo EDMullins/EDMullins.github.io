@@ -1,13 +1,18 @@
 body {
     background-color: #FDE9D7;
     margin: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth !important;
 }
 
 header {
     background-color: #325b54;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding-top: 0vw;
 }
+
 header h1 {
     color: #FDE9D7;
     font-family: 'Syne', sans-serif;
@@ -15,16 +20,61 @@ header h1 {
     text-align: center;
     justify-content: center;
     align-items: center;
-    margin-inline: auto;
     text-shadow: 20px 5px #D7263D;
 }
 
-.class {
+header a {
+    text-decoration: none;
+}
+
+header .arrow {
+    color: #FDE9D7;
+    font-size: 10vw;
+}
+
+header img {
+    width: 100%;
+}
+
+.sect {
     margin: 40px;
+    flex-direction: row;
+    font-family: 'Poppins', sans-serif;
+}
+
+.one, .two, .three{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sect img {
+    width: 30%;
+    border-radius: 5px;
 }
 
 .text {
     color: black;
+}
+
+.one .text {
+    font-size: 2.5vw;
+}
+
+.one img {
+    border: solid 5px #D7263D;
+}
+
+.two .text,.three .text {
+    font-size: 2vw;
+}
+
+.two img {
+    border: solid 5px #325b54;
+}
+
+.three img {
+    border: solid 5px #D7263D;
 }
 
 footer {
@@ -34,4 +84,22 @@ footer {
 footer img {
     width: 100%;
     
+}
+
+@media only screen and (max-width: 750px){
+    .sect {
+        flex-direction: column;
+    }
+
+    .two {
+        flex-direction: column-reverse;
+    }
+
+    .sect .text {
+        font-size: 3.5vw;
+    }
+
+    .sect img {
+        width: 70%;
+    }
 }
